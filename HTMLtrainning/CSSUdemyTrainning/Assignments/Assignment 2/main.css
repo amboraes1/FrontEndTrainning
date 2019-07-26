@@ -1,0 +1,17 @@
+.div-header1{
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px 15px 20px 25px;
+  display: inline-block;
+}
+#box1{
+  display: none;
+  height: 300px;
+  width: 50%;
+}
+
+#box2:hover{
+  background: red;
+  color: white;
+  border: 3px solid grey;
+}
