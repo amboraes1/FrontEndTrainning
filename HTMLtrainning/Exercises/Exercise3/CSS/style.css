@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: auto;
+  grid-template-areas: "img1 img2";
+  position: relative;
+}
+
+.container1-image1 {
+  background: url("../Media/background-8.jpg") center/cover no-repeat border-box;
+  height: 100vh;
+  grid-area: img1;
+}
+
+#container2-image1__text {
+  text-align: center;
+  display: inline-block;
+  margin-right: -20px;
+  width: 20%;
+}
+
+.container1-image2 {
+  background: url("../Media/background-1.jpg") center/cover no-repeat border-box;
+  height: 100%;
+  grid-area: img2;
+  /*background-position:10% 10%; */
+}
+
+.container2 {
+  display: grid;
+  grid-template-rows: 40% 40% 20%;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "img1 img2 txt txt"
+    "img3 img4 txt txt"
+    "img5 img5 img6 img7";
+  bottom: 0%;
+  left: 50%;
+  width: 80%;
+  height: 90%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.container2-image1 {
+  background: url("../Media/background-3.jpg") center/cover no-repeat border-box;
+  grid-area: img1;
+  height: 100%;
+  z-index: 1;
+}
+
+.container2-image1__button {
+  width: 80%;
+  text-align: center;
+  margin-left: 28px;
+  margin-top: 20px;
+}
+
+.container2-image1__button1 {
+  background: #F2F2F2;
+  color: #000000;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.container2-image2 {
+  background: url("../Media/background-2.jpg") left/cover no-repeat border-box;
+  grid-area: img2;
+  height: 100%;
+  z-index: 1;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.container2-image3 {
+  background: url("../Media/background-4.jpg") left/cover no-repeat border-box;
+  grid-area: img3;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.container2-image4 {
+  background: #F7A501;
+  grid-area: img4;
+  z-index: 1;
+  position: relative;
+}
+
+.container2-image5 {
+  background: url("../Media/background-5.jpg") left/cover no-repeat border-box;
+  grid-area: img5;
+  height: 100%;
+  z-index: 1;
+  color: white;
+  position: relative;
+}
+
+#head1 {
+  position: absolute;
+  display: block;
+  font-size: 15px;
+  bottom: 40%;
+  margin-left: 10px;
+}
+
+.container2-image5 .container2-line {
+  position: absolute;
+  bottom: 40%;
+}
+
+.container2-image6 {
+  background: url("../Media/background-6.jpg") left/cover no-repeat border-box;
+  grid-area: img6;
+  height: 100%;
+  z-index: 1;
+}
+
+.container2-image7 {
+  background: url("../Media/background-7.jpg") left/cover no-repeat border-box;
+  grid-area: img7;
+  height: 100%;
+  z-index: 1;
+}
+
+.container2-images__lorem,
+.container2-images__lorem h1,
+.container2-lorem,
+p {
+  color: white;
+  margin-left: 10px;
+}
+
+.container2-images__lorem {
+  position: absolute;
+  bottom: 8%;
+  margin-right: 90px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.container2-lorem {
+  margin-left: 80px;
+  margin-right: 100px;
+  grid-area: txt;
+}
+
+button {
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 25px;
+  z-index: 1;
+}
+
+.container2-line {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 1px;
+  background: #F2F2F2;
+  width: 35px;
+}
+
+.container2-image1 div:nth-child(2) {
+  margin-left: 100px;
+  margin-right: -20px;
+}
+
+.container2-line>p {
+  margin-left: 0;
+}

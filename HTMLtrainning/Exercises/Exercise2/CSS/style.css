@@ -1,0 +1,136 @@
+body {
+  margin: 0%;
+}
+
+.main-title,
+.main-title__text {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+}
+
+.container-image1 {
+  position: relative;
+  background: url("../Media/grid-1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container-image2 {
+  position: relative;
+  background: url("../Media/grid-2.jpeg") center/cover no-repeat border-box;
+  height: 25rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container-image3 {
+  position: relative;
+  background: url("../Media/grid-3.jpeg") center/cover no-repeat border-box;
+  height: 25rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container-image4 {
+  position: relative;
+  background: url("../Media/grid-4.jpeg") center/cover no-repeat border-box;
+  height: 25rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container-image5 {
+  position: relative;
+  background: url("../Media/grid-5.jpg") center/cover no-repeat border-box;
+  height: 25rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container-image6 {
+  position: relative;
+  background: url("../Media/grid-6.jpeg") center/cover no-repeat border-box;
+  height: 25rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background: #CF5434;
+  opacity: 0.7;
+  bottom: 5%;
+  left: 5%;
+  z-index: 1;
+}
+
+.container-image__text {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  z-index: 1;
+  color: white;
+}
+
+.container-image__text h2,
+.container-image__text p {
+  margin: 0;
+}
+
+svg {
+  display: none;
+  color: white;
+  background: #FFFFFF;
+  border: 1px solid white;
+  z-index: 1;
+  bottom: 0%;
+}
+
+.container-image1:hover .overlay,
+.container-image1:hover svg,
+.container-image2:hover .overlay,
+.container-image2:hover svg,
+.container-image3:hover .overlay,
+.container-image3:hover svg,
+.container-image4:hover .overlay,
+.container-image4:hover svg,
+.container-image5:hover .overlay,
+.container-image5:hover svg,
+.container-image6:hover .overlay,
+.container-image6:hover svg {
+  display: block;
+}
+
+.container-image1:hover > .container-image__text,
+.container-image2:hover > .container-image__text,
+.container-image3:hover > .container-image__text,
+.container-image4:hover > .container-image__text,
+.container-image5:hover > .container-image__text,
+.container-image6:hover > .container-image__text {
+  left: 8%;
+  bottom: 8%;
+}
+
+@media (min-width:540px) {
+  .container{
+    grid-template-columns: 50% 50%;
+    margin: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .container{
+    grid-template-columns: repeat(3,33.33%);
+    margin: auto;
+    max-width: 1024px;
+  }
+}
