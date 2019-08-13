@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  height: 100vh;
+}
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*.main-header p{
+  align-self: flex-start;
+  text-align: left;
+}*/
+.nav-items {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 20px;
+  transition: border-bottom 2s;
+}
+
+.nav-item:hover{
+  border-bottom: 1px solid red;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color: #949494;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%
+}
+
+.main-section {
+  display: inline-block;
+}
+
+.main-section__h{
+  display:block;
+  font-size: 60px;
+}
+
+.main-section__p {
+  display:block;
+  font-size: 14px;
+  color: #949494;
+}
+
+b {
+  color: black;
+}
+
+.main-section__button {
+  background: linear-gradient(to right, black, #F55656);
+  color: white;
+  vertical-align: middle;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 15px;
+  position: relative;
+  padding-right: 25px;
+}
+
+.main-section__button:hover{
+  animation: updownbutton 0.8s 0.5s 6;
+}
+
+svg {
+  stroke: white;
+  position: absolute;
+  top:32%;
+  right: 0px;
+}
+
+@keyframes updownbutton {
+  0%{
+    transform: translateY(0);
+  }50%{
+    transform: translateY(10px);
+  }100%{
+    transform: translateY(-10px);
+  }
+
+}
