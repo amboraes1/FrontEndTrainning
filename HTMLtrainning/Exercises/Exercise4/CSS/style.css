@@ -1,14 +1,17 @@
-*{
+* {
   box-sizing: border-box;
 }
-html{
+
+html {
   height: 100vh;
 }
+
 body {
   margin-left: 10%;
   margin-right: 10%;
   height: 100%;
 }
+
 
 .main-header {
   display: flex;
@@ -16,10 +19,6 @@ body {
   align-items: center;
 }
 
-/*.main-header p{
-  align-self: flex-start;
-  text-align: left;
-}*/
 .nav-items {
   display: inline-block;
   list-style: none;
@@ -28,18 +27,31 @@ body {
 .nav-item {
   display: inline-block;
   margin: 0 20px;
-  transition: border-bottom 2s;
 }
 
-.nav-item:hover{
-  border-bottom: 1px solid red;
-}
-
-.nav-item a{
+.nav-item a {
   text-decoration: none;
   color: #949494;
 }
-main{
+
+.nav-ul {
+  display: inline-block;
+}
+
+.nav-ul::after{
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: red;
+  transition: 300ms;
+}
+
+.nav-ul:hover:after{
+  width: 100%;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,13 +62,13 @@ main{
   display: inline-block;
 }
 
-.main-section__h{
-  display:block;
+.main-section__h {
+  display: block;
   font-size: 60px;
 }
 
 .main-section__p {
-  display:block;
+  display: block;
   font-size: 14px;
   color: #949494;
 }
@@ -76,24 +88,27 @@ b {
   padding-right: 25px;
 }
 
-.main-section__button:hover{
+.main-section__button:hover {
   animation: updownbutton 0.8s 0.5s 6;
 }
 
 svg {
   stroke: white;
   position: absolute;
-  top:32%;
+  top: 32%;
   right: 0px;
 }
 
 @keyframes updownbutton {
-  0%{
+  0% {
     transform: translateY(0);
-  }50%{
-    transform: translateY(10px);
-  }100%{
-    transform: translateY(-10px);
   }
 
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }

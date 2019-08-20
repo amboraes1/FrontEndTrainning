@@ -1,0 +1,110 @@
+body {
+  padding: 0;
+  background: rgb(255, 240, 233) url("../Media/stars-bg.png");
+}
+
+.main-title{
+  max-width: 85vw;
+  margin-left: 8%;
+}
+.main-title h1 {
+  color: #6FD9D4;
+  text-align: center;
+}
+
+.main-title p {
+  color: #757575;
+  text-align: left;
+}
+
+.steps {
+  text-align: center;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-left: 20px;
+  grid-gap: 40px;
+  color: #ffffff;
+  max-width: 85vw;
+}
+
+.steps-container-image{
+  background: #ffffff;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin:auto;
+  margin-top: 20px;
+  padding: 20px;
+  vertical-align: middle;
+
+}
+.steps-container-image svg{
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.steps-container__joga {
+  background: linear-gradient(to bottom right,#FCCE33,#37E7CA);
+  box-shadow: 0px 14px 17px -8px rgba(48,48,48,1);
+}
+
+
+.steps-container-footer{
+  background: #ffffff;
+  height: 100%;
+  color: #757575;
+}
+
+.steps-container__flexing {
+  background: linear-gradient(to bottom right,#00E7CF,#E075B0);
+  box-shadow: 0px 14px 17px -8px rgba(48,48,48,1);
+}
+
+.steps-container__standing {
+  background: linear-gradient(to bottom right,#FF4B95,#FFC22D);
+  box-shadow: 0px 14px 17px -8px rgba(48,48,48,1);
+}
+.steps-text__last{
+  max-width: 85vw;
+  color: #757575;
+  margin-left: 8%;
+}
+.steps-text__last button {
+  color: #ffffff;
+  background: #6FD9D4;
+  border-radius: 0;
+  border: none;
+  width: 100px;
+  height: 30px;
+}
+@media (min-width:540px) {
+  .main-title{
+    max-width: 1020px;
+    margin:auto;
+  }
+
+  .main-title h1{
+    padding-left: 9%;
+  }
+
+  .steps-container{
+    grid-template-columns: repeat(4,25%);
+    max-width: 1020px;
+    margin: auto;
+  }
+
+  .steps-text__last{
+    max-width: 1020px;
+    margin: auto;
+    padding-left: 8%;
+  }
+
+}

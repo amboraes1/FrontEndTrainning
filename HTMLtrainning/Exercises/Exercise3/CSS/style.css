@@ -27,7 +27,6 @@ body {
   background: url("../Media/background-1.jpg") center/cover no-repeat border-box;
   height: 100%;
   grid-area: img2;
-  /*background-position:10% 10%; */
 }
 
 .container2 {
